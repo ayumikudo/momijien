@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>紅葉苑</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <language initial="ja" lang="ja,en"></language>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flickity.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet">
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="js/flickity.pkgd.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1><a href="#"><img src="images/logo-1.svg"></a></h1>
+    <nav class="pc-only">
+      <!--日本語-->
+      <ul class="ja">
+        <li><a href="#">お部屋</a></li>
+        <li><a href="#">お食事</a></li>
+        <li><a href="#">温泉</a></li>
+        <li><a href="#">景観</a></li>
+        <li><a href="#access">交通アクセス</a></li>
+      </ul>
+      <!--/日本語-->
+      <!--英語-->
+      <ul class="en">
+        <li><a href="#">Rooms</a></li>
+        <li><a href="#">Restaurant</a></li>
+        <li><a href="#">Spa</a></li>
+        <li><a href="#">Landscape</a></li>
+        <li><a href="#access">Access</a></li>
+      </ul>
+      <!--/英語-->
+      <ul class="language">
+        <li><a href="#" id="ja" class="current">Japanese</a></li>
+        <li><a href="#" id="en">English</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamberger-menu sp-only">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!--日本語-->
+    <button class="reservation-btn ja"><a href="#reservation">ご予約</a></button>
+    <!--/日本語-->
+    <!--英語-->
+    <button class="reservation-btn en"><a href="#reservation">Reserve</a></button>
+    <!--/英語-->
+
+  </header>
+
+  <div id="main-gallery" class="main-visual ja-catch">
+    <div class="gallery-cell">
+      <img src="images/slider-1.png">
+    </div>
+
+    <div class="gallery-cell">
+      <img src="images/slider-2.png">
+    </div>
+  </div>
+
+  <article class="contents contents-img-1 left-img">
+    <section class="contents-text" animation="fadeIn">
+      <span>Rooms</span>
+      <h2>お部屋</h2>
+      <!--日本語-->
+      <p class="ja">
+        明るい色彩で圧倒的な開放感を愉しめる北欧風和モダンの「コンセプトスィート」、重厚な和の設えの中にも機能性を追求した「和様貴賓室」、リーズナブルに花かざしを満喫する「和モダンスタンダードルーム」など、旅のスタイルにコーディネイトできる個性豊かなルームタイプを全17室ご用意しております。
+      </p>
+      <!--/日本語-->
+      <!--英語-->
+      <p class="en">
+        A `` concept suite '' of Scandinavian style modern that enjoys an overwhelming open feeling with bright colors,
+        a `` Japanese style guest room '' pursuing functionality even in a solid Japanese setting, `` Enjoy a reasonable
+        flower hover '' There are 17 unique room types that can be coordinated in a travel style, such as the "Japanese
+        Modern Standard Room".
+      </p>
+      <!--/英語-->
+      <!--日本語-->
+      <a href="#" class="more-btn ja">もっと見る</a>
+      <!--/日本語-->
+      <!--英語-->
+      <a href="#" class="more-btn en">more</a>
+      <!--/英語-->
+    </section>
+  </article>
+
+  <article class="contents contents-img-2 right-img">
+    <section class="contents-text" animation="fadeIn">
+      <span>Restaurant</span>
+      <h2>お食事</h2>
+      <!--日本語-->
+      <p class="ja">
+        蒲郡の新鮮な海の幸や地元ブランド牛はもちろん、季節の地場野菜をふんだんにとりいれた創作会席コースで思い出に残るディナータイムを演出します。そして朝は体に優しい和食から。こだわりの和食セットと和洋ハーフブッフェで素敵な朝を迎えましょう。
+      </p>
+      <!--/日本語-->
+      <!--英語-->
+      <p class="en">
+        We will create a memorable dinner time with a creative kaiseki course that uses plenty of seasonal local
+        vegetables as well as fresh seafood from Gamagori and local brand beef. And in the morning, from Japanese food
+        that is kind to the body. Let's greet a wonderful morning with a special Japanese food set and Japanese-Western
+        half buffet.
+      </p>
+      <!--/英語-->
+      <!--日本語-->
+      <a href="#" class="more-btn ja">もっと見る</a>
+      <!--/日本語-->
+      <!--英語-->
+      <a href="#" class="more-btn en">more</a>
+      <!--/英語-->
+    </section>
+  </article>
+
+  <article class="contents contents-img-3 left-img">
+    <section class="contents-text" animation="fadeIn">
+      <span>Spa</span>
+      <h2>温泉</h2>
+      <!--日本語-->
+      <p class="ja">
+        ゆとりの広さを誇る２つの温泉大浴場を完備。それぞれに露天風呂も。源泉は蒲郡の名湯「美白泉」、単純アルカリ性の御湯は、くせがなくさっぱり、そして広い湯船の豊富な湯量で体の芯からほっこり温まる、これが温泉の醍醐味です。
+      </p>
+      <!--/日本語-->
+      <!--英語-->
+      <p class="en">
+        Equipped with two large public baths that are spacious. Each has an open-air bath. The source of the hot springs
+        is the beautiful hot spring of Gamagori, "Makushirosen".
+      </p>
+      <!--/英語-->
+      <!--日本語-->
+      <a href="#" class="more-btn ja">もっと見る</a>
+      <!--/日本語-->
+      <!--英語-->
+      <a href="#" class="more-btn en">more</a>
+      <!--/英語-->
+    </section>
+  </article>
+
+  <article class="contents contents-img-4 right-img">
+    <section class="contents-text" animation="fadeIn">
+      <span>Landscape</span>
+      <h2>景観</h2>
+      <!--日本語-->
+      <p class="ja">
+        秋は紅葉の名所。温泉郷の中心を流れる川や、流れ落ちる様が美しい滝、そして緑に囲まれた渓谷の景観が素晴らしく、文豪や多くの文化人にも愛されてきた景観をじっくりとご堪能ください。
+      </p>
+      <!--/日本語-->
+      <!--英語-->
+      <p class="en">
+        Autumn is a famous spot for autumn leaves. The river flowing through the center of the hot spring village, the
+        beautiful waterfall that flows down, and the valley surrounded by green are wonderful, so please thoroughly
+        enjoy the scenery that has been loved by literary and many cultural people.
+      </p>
+      <!--/英語-->
+      <!--日本語-->
+      <a href="#" class="more-btn ja">もっと見る</a>
+      <!--/日本語-->
+      <!--英語-->
+      <a href="#" class="more-btn en">more</a>
+      <!--/英語-->
+    </section>
+  </article>
+
+  <div id="access">
+    <span class="sub">Access</span>
+    <h2>交通アクセス</h2>
+
+    <h3>紅葉苑</h3>
+    <!--日本語-->
+    <p class="ja">
+      〒443-0105 愛知県蒲郡市西浦町大山1000-1000<br>
+      Tel.0533-12-1234 Fax.0533-12-1234
+    </p>
+    <!--/日本語-->
+    <!--英語-->
+    <p class="en">
+      1000-1000 Nishiuracho,<br>
+      Gamagori-shi, Aichi-ken 443-0105<br>
+      Japan
+    </p>
+    <!--/英語-->
+    <!--日本語-->
+    <p class="ja">
+      名鉄「西浦駅」から「紅葉苑」までは【温泉組合の無料送迎バス】をご利用ください。<br>
+      西浦駅14：20～16：20到着電車にあわせて随時運行してございます（予約不要）。
+    </p>
+    <!--/日本語-->
+    <!--英語-->
+    <p class="en">
+      From Meitetsu "Nishiura Station" to "Kyouen", please use [Free shuttle bus from the hot spring association].<br>
+      Nishiura Station runs from 14:20 to 16:20 according to the arrival train (reservation not required).
+    </p>
+    <!--/英語-->
+
+    <div class="gmap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.5301823997074!2d137.170204215234!3d34.767425980417414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6004c1a1d494013d%3A0x808532b2afa90dd7!2z44CSNDQzLTAxMDUg5oSb55-l55yM6JKy6YOh5biC6KW_5rWm55S65aSn5bGx77yR77yX4oiS77yR!5e0!3m2!1sja!2sjp!4v1584435759031!5m2!1sja!2sjp"
+        width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </div>
+  </div>
+
+  <div id="reservation">
+    <span class="sub">Reserve</span>
+    <h2>ご予約</h2>
+
+    <div class="reservation-box">
+
+      <div id="room-gallery">
+        <div class="room-gallery-cell">
+          <img src="images/room-1.png">
+          <h3 class="ja">スタンダード</h3>
+          <h3 class="en">Standard</h3>
+        </div>
+        <div class="room-gallery-cell">
+          <img src="images/room-2.png">
+          <h3 class="ja">スーペリア</h3>
+          <h3 class="en">Superior</h3>
+        </div>
+        <div class="room-gallery-cell">
+          <img src="images/room-3.png">
+          <h3 class="ja">デラックス</h3>
+          <h3 class="en">Deluxe</h3>
+        </div>
+        <div class="room-gallery-cell">
+          <img src="images/room-4.png">
+          <h3 class="ja">エグゼクティブ</h3>
+          <h3 class="en">Executive</h3>
+        </div>
+        <div class="room-gallery-cell">
+          <img src="images/room-5.png">
+          <h3 class="ja">スイート</h3>
+          <h3 class="en">Suite</h3>
+        </div>
+      </div>
+
+      <ul class="reservation-form">
+        <li>
+          <p class="ja">チェックイン</p>
+          <p class="en">Check-in</p>
+          <p><input type="text" name="" id="checkin" placeholder="年／月／日(yy/mm/dd)"></p>
+        </li>
+
+        <li>
+          <p class="ja">チェックアウト</p>
+          <p class="en">Check-out</p>
+          <p><input type="text" name="" id="checkout" placeholder="年／月／日(yy/mm/dd)"></p>
+        </li>
+
+        <li>
+          <p class="ja">希望の客室</p>
+          <p class="en">Desired room</p>
+          <select name="" id="" class="select">
+            <option value="1" selected="">スタンダード(Standard)</option>
+            <option value="2">スーペリア(Superior)</option>
+            <option value="3">デラックス(Deluxe)</option>
+            <option value="4">エグゼクティブ(Executive)</option>
+            <option value="5">スイート(Suite)</option>
+          </select>
+        </li>
+
+        <li>
+          <p class="ja">大人</p>
+          <p class="en">Travelers</p>
+          <select name="" id="" class="select">
+            <option value="1" selected="">1名(1 person)</option>
+            <option value="2">2名(2 people)</option>
+            <option value="3">3名(3 people)</option>
+          </select>
+        </li>
+
+        <li class="last ja"><input name="" type="submit" value="検索する" class="submit-btn"></li>
+        <li class="last en"><input name="" type="submit" value="Search" class="submit-btn"></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="address">
+      <img src="images/logo-3.svg">
+      <!--日本語-->
+      <p class="ja">〒443-0105 愛知県蒲郡市西浦町大山1000-1000<br>
+        <span>Tel.0533-12-1234 Fax.0533-12-1234</span>
+      </p>
+      <!--/日本語-->
+      <!--英語-->
+      <p class="en">1000-1000 Nishiuracho,<br>
+        Gamagori-shi, Aichi-ken 443-0105<br>
+        Japan<br>
+        <span>Tel.0533-12-1234 Fax.0533-12-1234</span>
+      </p>
+      <!--/英語-->
+    </div>
+    <p class="copyright">© Copyright 紅葉苑 All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+  <script>
+    //チェックイン
+    flatpickr.localize(flatpickr.l10ns.ja);
+    flatpickr('#checkin', {
+      minDate: "today"
+    });
+
+    //チェックアウト
+    flatpickr.localize(flatpickr.l10ns.ja);
+    flatpickr('#checkout', {
+      minDate: "today"
+    });
+  </script>
+</body>
+
+</html>
