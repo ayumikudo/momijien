@@ -128,7 +128,7 @@ header button.reservation-btn a {
 
 .main-visual .gallery-cell img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .main-visual::before {
@@ -641,6 +641,14 @@ footer .copyright {
   /* メインギャラリー */
   .main-visual {
     margin-bottom: 60px;
+  }
+  .main-visual .gallery-cell {
+    width: 100%;
+    height: 25vh;
+  }
+  .main-visual .gallery-cell img {
+    width: 100%;
+    height: 100%;
   }
   .main-visual::before {
     left: 45%;
